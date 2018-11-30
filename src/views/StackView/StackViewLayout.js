@@ -833,7 +833,7 @@ class StackViewLayout extends React.Component {
         key={`card_${scene.key}`}
         position={this._getPosition()}
         realPosition={this.props.transitionProps.position}
-        animatedStyle={style}
+        animatedStyle={style || {}}
         transparent={this.props.transparentCard}
         style={[{ paddingTop }, this.props.cardStyle]}
         scene={scene}
